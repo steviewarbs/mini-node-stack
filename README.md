@@ -1,6 +1,6 @@
 # Get Started with the Mini-Node-Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is intended to show the simplicity of the MERN stack. It is purposefully simple and can be cloned as a starter project. The application uses a REACT FE, Node.js/Express for the API framework and Mongo for the DB.
 
 ## Available Scripts
 
@@ -31,7 +31,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `Mongo`
 
-To run run Mongo for this application install the following dependencies. 
+To run Mongo for this application install the following dependencies. 
 
 - `npm install mongodb`
 - `npm install mongoose`
