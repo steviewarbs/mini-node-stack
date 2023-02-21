@@ -36,7 +36,7 @@ To run Mongo for this application install the following dependencies.
 - `npm install mongodb`
 - `npm install mongoose`
 
-Start the server by running `sudo mongod` inside your server directory. Once that is started navigate to a new terminal and run `"mongo"` this will allow the user to start viewing databases and collections. To see DBs run `"show databases"` and to view collections run `"show collections"` after you have ran `"use mydatabase"`. Be sure to ensure the right directories are available on the server by running `sudo mkdir -p /data/db`.
+Start the server by running `sudo mongod` inside your server directory. Once that is started navigate to a new terminal and run `mongo` this will allow the user to start viewing databases and collections. To see DBs run `show databases` and to view collections run `show collections` after you have ran `use mydatabase`. Be sure to ensure the right directories are available on the server by running `sudo mkdir -p /data/db`.
 
 ### `Node JS`
 
