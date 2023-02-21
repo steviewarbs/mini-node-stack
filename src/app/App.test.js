@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Mini Node Stack text', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const appHeader = screen.getByText(/Mini Node Stack/i);
+  expect(appHeader).toBeInTheDocument();
 });
