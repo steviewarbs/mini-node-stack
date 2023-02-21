@@ -10,7 +10,8 @@ function App() {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [address, setAddress] = useState("");
-  const dataOutput=[1,2,3,4,5,6,7,8,9];
+  const [data, setData] = useState("");
+  
 
   //axios post request 
 
@@ -29,6 +30,16 @@ function App() {
 
   }
 
+const getData = ()=>{
+  axios.get('http://localhost:4000/api/persons')
+    .then(response => {
+      setData(JSON.stringify(response.data));
+    })
+    .catch(error => {
+      console.log(error);
+    });
+}
+
 
   return (
     <div className="App">
@@ -43,15 +54,19 @@ function App() {
       <input type="text" onChange={(e)=>{setAge(()=>{return e.target.value})}} placeholder={age} /><br/>
       <h2>Address</h2>
       <input type="text" onChange={(e)=>{setAddress(()=>{return e.target.value})}} placeholder={address} /><br/>
+      <br/>
 
       {/* Send details */}
 
-      <button onClick={postData}>Send</button>
-{/* 
-      {dataOutput.map((out)=>{
-        return <h5>{out}</h5>
-      })} */}
+      <button onClick={postData}>Post</button>
+      <button onClick={getData}>Get</button>
+      <br/>
+      <br/>
+ 
 
+      {/* Display response from the DB */}
+
+      <textarea rows="10" cols="50" value={data}></textarea>
 
     </div>
   );
