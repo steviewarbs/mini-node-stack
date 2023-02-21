@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "../header/header";
+import Header from "../components/header/header";
 import { useState } from "react";
 import axios from 'axios'
 
